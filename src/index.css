@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Noto Sans Bengali', 'SolaimanLipi', Arial, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-farming-green hover:bg-farming-dark-green text-white font-semibold py-3 px-6 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-weather-blue hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 border border-gray-100;
+  }
+  
+  .alert-card {
+    @apply rounded-lg p-4 shadow-md border-l-4;
+  }
+  
+  .alert-info {
+    @apply bg-blue-50 border-l-alert-info text-blue-800;
+  }
+  
+  .alert-success {
+    @apply bg-green-50 border-l-farming-green text-green-800;
+  }
+  
+  .alert-warning {
+    @apply bg-yellow-50 border-l-alert-yellow text-yellow-800;
+  }
+  
+  .alert-danger {
+    @apply bg-red-50 border-l-alert-red text-red-800;
+  }
+}
